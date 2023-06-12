@@ -22,7 +22,7 @@ export default function Home() {
               </a>
             </div>
             <div className="mt-20 ml-0 justify-center items-center">
-              <a href="#projects" className="flex items-center text-white hover:text-white flex-col text-2xl font-bold" scroll={false}>
+              <a href="#projects" className="flex items-center text-white hover:text-white flex-col text-2xl font-bold">
                 <span>Projects</span>
                 <FaChevronDown className="mt-2 text-sm" />
               </a>
