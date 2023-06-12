@@ -4,19 +4,19 @@ const education = [
     {
         id: 1,
         date: "2023 - present",
-        description: "M.Sc. in software Engineering & internet computing",
+        description: "M.Sc. in Software Engineering & Internet Computing",
         place: "Technical University of Vienna, Austria",
     },
     {
         id: 2,
         date: "2014 - 2018",
-        description: "B.Sc. in software & information engineering",
+        description: "B.Sc. in Software & Information Engineering",
         place: "Technical University of Vienna, Austria",
     },
     {
         id: 3,
         date: "2010 - 2018",
-        description: "secondary school",
+        description: "Secondary school",
         place: "Akademisches Gymnasium, Austria",
     }
 ];
@@ -25,32 +25,32 @@ const experience = [
     {
         id: 1,
         date: "2022 - present",
-        title: "java developer",
+        title: "Java Developer",
         company: "TU Wien"
     },
     {
         id: 2,
         date: "2021 - 2022",
-        title: "technical support",
+        title: "Technical Support",
         company: "HCM Advice"
     },
     {
         id: 3,
         date: "2020 - 2021",
-        title: "IT services",
+        title: "IT Services",
         company: "HELFERLINE"
     },
     {
         id: 4,
         date: "2019 - 2020",
-        title: "event service",
+        title: "Event Service",
         company: "Manpower"
     },
     {
         id: 5,
         date: "2019 - 2020",
-        title: "military service",
-        company: "austria armed forces"
+        title: "Military Service",
+        company: "Austria Armed Forces"
     },
 ];
 const skills = [
@@ -82,7 +82,7 @@ export default function CV() {
             <div className="text-center">
                 <h1 className="text-5xl font-bold text-white mt-20">about me</h1>
             </div>
-            <div className="flex justify-center  gap-10 mt-40">
+            <div className="flex justify-center gap-10 mt-40 flex-wrap">
                 <div>
                     <Image
                         src="/images/example.jpg"
@@ -94,7 +94,7 @@ export default function CV() {
                 </div>
                 <div>
                     <h3 className="font-general-bold text-2xl mb-4 text-ternary-dark dark:text-ternary-light">
-                        Education
+                        education
                     </h3>
                     {education.map((el) => (
                         <div className="mb-4 text-ternary-dark dark:text-ternary-light text-lg" key={el.id}>
@@ -106,7 +106,7 @@ export default function CV() {
                 </div>
                 <div>
                     <h3 className="font-general-bold text-2xl mb-4 text-ternary-dark dark:text-ternary-light">
-                        Professional Experience
+                        professional experience
                     </h3>
                     {experience.map((el) => (
                         <div className="card" key={el.id}>
@@ -118,7 +118,7 @@ export default function CV() {
                 </div>
                 <div>
                     <h3 className="font-general-bold text-2xl mb-4 text-ternary-dark dark:text-ternary-light">
-                        Skills
+                        skills
                     </h3>
                     <div className="card">
                         {skills.map((el) => (

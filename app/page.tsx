@@ -6,7 +6,7 @@ import React from 'react';
 export default function Home() {
   return (
     <div>
-      <div className="flex justify-center items-center h-screen" id='home'>
+      <div className="flex justify-center items-center min-h-screen" id='home'>
         <div className="text-center">
           <h1 className="text-7xl font-bold text-white">Valentin Schnabl<span className='text-5xl text-gray-400'> B.Sc.</span></h1>
           <p className="text-2xl text-gray-400 mt-4">full stack software developer</p>
@@ -35,10 +35,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='flex h-screen mt-20' id='projects'>
+      <div className='flex min-h-screen mt-20' id='projects'>
         <Projects />
       </div>
-      <div className='flex h-screen mt-20' id='cv'>
+      <div className='flex min-h-screen mt-20' id='cv'>
         <CV />
       </div>
     </div>

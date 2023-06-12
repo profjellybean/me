@@ -11,7 +11,7 @@ export interface Project {
 
 export default function SingleProject(project: Project) {
     return (
-        <div className="flex flex-col items-center rounded-lg p-4 m-4">
+        <div className="flex flex-col items-center rounded-lg p-4 m-4 max-w-md">
             <Image
                 className="w-18 h-18 rounded-full object-cover mr-10 aspect-square"
                 src={project.imageUrl}
@@ -19,7 +19,7 @@ export default function SingleProject(project: Project) {
                 width={200}
                 height={200}
             />
-            <div className='max-w-2xl'>
+            <div className='max-w-xl'>
                 <div className='flex items-center mb-1'>
                     <h2 className="text-2xl mr-4 text-white font-bold">{project.title}</h2>
                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
