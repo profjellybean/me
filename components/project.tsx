@@ -3,27 +3,27 @@ import { Project } from "./singleproject";
 
 const myProjects: Project[] = [
     {
-        title: "Project 1",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+        title: "Cat-Mouse game",
+        description: "A simple game where the player controls a cat and tries to catch multiple mice. The game is written in Vue.",
         link: "",
         imageUrl: "/images/example.jpg"
     },
     {
-        title: "Project 2",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-        link: "",
+        title: "Portfolio website",
+        description: "This website is written in Next.js and Tailwind CSS.",
+        link: "https://github.com/profjellybean/me",
         imageUrl: "/images/example.jpg"
     },
     {
-        title: "Project 3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-        link: "",
+        title: "SHIC",
+        description: "Shopping Home Inventory Cash is a full stack application written in Java and Angular. It is a grocery management system including a shopping list, a home inventory, a cash management system and recipes. ",
+        link: "https://github.com/profjellybean/SHIC",
         imageUrl: "/images/example.jpg"
     },
     {
-        title: "Project 4",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-        link: "",
+        title: "Content profiling",
+        description: "Is a data preservation script written in Python which scans a directory and creates a report of the file types and their sizes.",
+        link: "https://github.com/profjellybean/content-profiling",
         imageUrl: "/images/example.jpg"
     },
 ]
@@ -36,7 +36,7 @@ export default function Projects() {
             <div className="text-center">
                 <h1 className="text-5xl font-bold text-white mt-20">my work</h1>
             </div>
-            <div className="flex justify-center ml-48 mr-48 mt-20 flex-wrap">
+            <div className="flex justify-center ml-48 mr-48 mt-10 flex-wrap">
                 {myProjects.map((project) => (
                     <SingleProject key={null} title={project.title} description={project.description} link={project.link} imageUrl={project.imageUrl} />
                 ))}

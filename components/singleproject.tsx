@@ -11,9 +11,9 @@ export interface Project {
 
 export default function SingleProject(project: Project) {
     return (
-        <div className="flex flex-col items-center rounded-lg p-4 m-4 max-w-md">
+        <div className="flex flex-col items-center rounded-lg p-4 m-4 basis-1/3 bg-white bg-opacity-5">
             <Image
-                className="w-18 h-18 rounded-full object-cover mr-10 aspect-square"
+                className="w-18 h-18 rounded-full object-cover mr-10 mb-5 aspect-square"
                 src={project.imageUrl}
                 alt={project.title}
                 width={200}

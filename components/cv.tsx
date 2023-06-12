@@ -9,7 +9,7 @@ const education = [
     },
     {
         id: 2,
-        date: "2014 - 2018",
+        date: "2019 - 2023",
         description: "B.Sc. in Software & Information Engineering",
         place: "Technical University of Vienna, Austria",
     },
@@ -48,7 +48,7 @@ const experience = [
     },
     {
         id: 5,
-        date: "2019 - 2020",
+        date: "2018 - 2019",
         title: "Military Service",
         company: "Austria Armed Forces"
     },
@@ -82,14 +82,14 @@ export default function CV() {
             <div className="text-center">
                 <h1 className="text-5xl font-bold text-white mt-20">about me</h1>
             </div>
-            <div className="flex justify-center gap-10 mt-40 flex-wrap">
+            <div className="flex gap-10 mt-20 flex-wrap ml-20 mr-20">
                 <div>
                     <Image
                         src="/images/example.jpg"
                         alt="Picture of the author"
                         width={300}
                         height={300}
-                        className="rounded-full"
+                        className="rounded-full aspect-square"
                     />
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export default function CV() {
                         education
                     </h3>
                     {education.map((el) => (
-                        <div className="mb-4 text-ternary-dark dark:text-ternary-light text-lg" key={el.id}>
+                        <div className="mb-4 text-ternary-dark dark:text-ternary-light text-base" key={el.id}>
                             {el.date}
                             <h3 className="position">{el.place}</h3>
                             <p className="description">{el.description}</p>
@@ -110,7 +110,7 @@ export default function CV() {
                     </h3>
                     {experience.map((el) => (
                         <div className="card" key={el.id}>
-                            <div className="mb-4 text-ternary-dark dark:text-ternary-light text-lg" key={el.id}>
+                            <div className="mb-4 text-ternary-dark dark:text-ternary-light text-base" key={el.id}>
                                 {el.date} <p><span className="font-general-italic">{el.title}</span>, {el.company}</p>
                             </div>
                         </div>
@@ -120,13 +120,13 @@ export default function CV() {
                     <h3 className="font-general-bold text-2xl mb-4 text-ternary-dark dark:text-ternary-light">
                         skills
                     </h3>
-                    <div className="card">
+                    <div className="flex gap-3 flex-wrap">
                         {skills.map((el) => (
-                            <ul key={el.id}>
-                                <li className="mb-4 text-ternary-dark dark:text-ternary-light text-lg" key={el.id}>
+                            <div className="" key={el.id}>
+                                <div className="mb-4 text-ternary-dark dark:text-ternary-light text-base" key={el.id}>
                                     {el.skill}
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         ))}
                     </div>
                 </div>
