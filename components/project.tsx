@@ -34,7 +34,7 @@ export default function Projects() {
     return (
         <div className="w-full">
             <div className="text-center">
-                <h1 className="text-5xl font-bold text-white mt-20">Projects</h1>
+                <h1 className="text-5xl font-bold text-white mt-20">my work</h1>
             </div>
             <div className="flex justify-center ml-48 mr-48 mt-20 flex-wrap ">
                 {myProjects.map((project) => (
