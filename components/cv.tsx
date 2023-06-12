@@ -3,47 +3,76 @@ import Image from "next/image";
 const education = [
     {
         id: 1,
-        date: "2019 - 2021",
-        place: "MSc. in Computer Science",
-        description: "University of the People, Pasadena, CA, USA",
+        date: "2023 - present",
+        description: "M.Sc. in software Engineering & internet computing",
+        place: "Technical University of Vienna, Austria",
     },
     {
         id: 2,
         date: "2014 - 2018",
-        place: "BSc. in Computer Science",
-        description: "University of the People, Pasadena, CA, USA",
+        description: "B.Sc. in software & information engineering",
+        place: "Technical University of Vienna, Austria",
     },
+    {
+        id: 3,
+        date: "2010 - 2018",
+        description: "secondary school",
+        place: "Akademisches Gymnasium, Austria",
+    }
 ];
 
 const experience = [
     {
         id: 1,
-        date: "2019 - Present",
-        title: "Frontend Developer",
-        company: "Freelance",
-        location: "Remote",
+        date: "2022 - present",
+        title: "java developer",
+        company: "TU Wien"
     },
     {
         id: 2,
-        date: "2019 - 2020",
-        title: "Frontend Developer",
-        company: "Freelance",
-        location: "Remote",
+        date: "2021 - 2022",
+        title: "technical support",
+        company: "HCM Advice"
     },
     {
         id: 3,
+        date: "2020 - 2021",
+        title: "IT services",
+        company: "HELFERLINE"
+    },
+    {
+        id: 4,
         date: "2019 - 2020",
-        title: "Frontend Developer",
-        company: "Freelance",
-        location: "Remote",
+        title: "event service",
+        company: "Manpower"
+    },
+    {
+        id: 5,
+        date: "2019 - 2020",
+        title: "military service",
+        company: "austria armed forces"
     },
 ];
 const skills = [
-    { id: 1, skill: "HTML" },
-    { id: 2, skill: "CSS" },
-    { id: 3, skill: "JavaScript" },
-    { id: 4, skill: "React" },
-    { id: 5, skill: "Next.js" },
+    { id: 1, skill: "Java" },
+    { id: 2, skill: "C" },
+    { id: 3, skill: "C++" },
+    { id: 4, skill: "Python" },
+    { id: 5, skill: "Javascript" },
+    { id: 6, skill: "TypeScript" },
+    { id: 7, skill: "React" },
+    { id: 8, skill: "Next.js" },
+    { id: 9, skill: "Vue" },
+    { id: 10, skill: "Angular" },
+    { id: 11, skill: "Node.js" },
+    { id: 12, skill: "Express.js" },
+    { id: 13, skill: "SQL" },
+    { id: 14, skill: "Redis" },
+    { id: 15, skill: "MongoDB" },
+    { id: 16, skill: "Git" },
+    { id: 17, skill: "Docker" },
+    { id: 18, skill: "Linux" },
+    { id: 20, skill: "Windows" },
 ];
 
 
@@ -82,7 +111,7 @@ export default function CV() {
                     {experience.map((el) => (
                         <div className="card" key={el.id}>
                             <div className="mb-4 text-ternary-dark dark:text-ternary-light text-lg" key={el.id}>
-                                {el.date} <p><span className="font-general-italic">{el.title}</span>, {el.company}, {el.location}</p>
+                                {el.date} <p><span className="font-general-italic">{el.title}</span>, {el.company}</p>
                             </div>
                         </div>
                     ))}
