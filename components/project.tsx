@@ -12,19 +12,19 @@ const myProjects: Project[] = [
         title: "Portfolio website",
         description: "This website is written in Next.js and Tailwind CSS.",
         link: "https://github.com/profjellybean/me",
-        imageUrl: "/images/example.jpg"
+        imageUrl: "/images/portfolio.png"
     },
     {
         title: "SHIC",
         description: "SHIC is a full stack application written in Java and Angular. It is a grocery management system including a shopping list, a home inventory, a cash management system and recipes. ",
         link: "https://github.com/profjellybean/SHIC",
-        imageUrl: "/images/example.jpg"
+        imageUrl: "/images/shicMain.png"
     },
     {
         title: "Content profiling",
         description: "A data preservation script written in Python which scans a directory and creates a report of the file types and their sizes.",
         link: "https://github.com/profjellybean/content-profiling",
-        imageUrl: "/images/example.jpg"
+        imageUrl: "/images/content-profiler.png"
     },
 ]
 

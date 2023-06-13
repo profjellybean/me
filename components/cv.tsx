@@ -74,6 +74,11 @@ const skills = [
     { id: 16, skill: "Git" },
     { id: 17, skill: "Docker" },
 ];
+const bio = [
+    {
+        description: "I am a 23-year-old software developer based in Vienna. Currently pursuing a master's degree in Software Engineering & Internet Computing at the esteemed Technical University of Vienna, I am constantly expanding my knowledge and honing my skills. I am actively engaged in both academic studies and professional development as a Java developer at the very same university. In addition to my expertise in software development, I am an enthusiastic musician and an avid climber, seeking inspiration from diverse disciplines to fuel my creativity."
+    }
+];
 
 
 export default function CV() {
@@ -108,11 +113,9 @@ export default function CV() {
                 </div >
                 <div className="flex flex-wrap gap-10 basis-2/3">
                     <div className="basis-full">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget
-                        fermentum aliquam, elit nunc ultricies nunc, eu aliquam diam elit at magna. Sed
-                        viverra, nisl eget fermentum aliquam, elit nunc ultricies nunc, eu aliquam diam
-                        elit at magna. Sed viverra, nisl eget fermentum aliquam, elit nunc ultricies nunc,
-                        eu aliquam diam elit at magna. Sed viverra, nisl eget fermentum aliquam, elit nunc
+                        <h3 className="text-base mb-4 text-ternary-dark dark:text-ternary-light">
+                            {bio[0].description}
+                        </h3>
                     </div>
                     <div className="basis-1/3">
                         <h3 className="font-general-bold text-2xl mb-4 text-ternary-dark dark:text-ternary-light">
@@ -121,8 +124,8 @@ export default function CV() {
                         {education.map((el) => (
                             <div className="mb-4 text-ternary-dark dark:text-ternary-light text-base" key={el.id}>
                                 {el.date}
-                                <p className="description">{el.description}</p>
-                                <span className='text-gray-400'> {el.place}</span>
+                                <p className="description ml-5">{el.description}</p>
+                                <span className='text-gray-400 ml-5'> {el.place}</span>
                             </div>
                         ))}
                     </div>
@@ -133,7 +136,7 @@ export default function CV() {
                         {experience.map((el) => (
                             <div className="card" key={el.id}>
                                 <div className="mb-4 text-ternary-dark dark:text-ternary-light text-base" key={el.id}>
-                                    {el.date} <p>{el.title},<span className='text-gray-400'> {el.company}</span></p>
+                                    {el.date}<p className="ml-5">{el.title},<span className='text-gray-400'> {el.company}</span> </p>
                                 </div>
                             </div>
                         ))}
