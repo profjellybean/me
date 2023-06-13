@@ -82,7 +82,7 @@ export default function CV() {
             <div className="text-center">
                 <h1 className="text-5xl font-bold text-white mt-20">about me</h1>
             </div>
-            <div className="flex gap-10 mt-20 flex-wrap ml-40 mr-20">
+            <div className="flex gap-10 mt-20 flex-wrap ml-40 mr-20 justify-center items-center">
                 <div className="basis-1/4">
                     <div className="flex justify-center items-center">
                         <Image
