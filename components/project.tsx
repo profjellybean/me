@@ -16,13 +16,13 @@ const myProjects: Project[] = [
     },
     {
         title: "SHIC",
-        description: "Shopping Home Inventory Cash is a full stack application written in Java and Angular. It is a grocery management system including a shopping list, a home inventory, a cash management system and recipes. ",
+        description: "SHIC is a full stack application written in Java and Angular. It is a grocery management system including a shopping list, a home inventory, a cash management system and recipes. ",
         link: "https://github.com/profjellybean/SHIC",
         imageUrl: "/images/example.jpg"
     },
     {
         title: "Content profiling",
-        description: "Is a data preservation script written in Python which scans a directory and creates a report of the file types and their sizes.",
+        description: "A data preservation script written in Python which scans a directory and creates a report of the file types and their sizes.",
         link: "https://github.com/profjellybean/content-profiling",
         imageUrl: "/images/example.jpg"
     },

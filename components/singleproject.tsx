@@ -13,7 +13,7 @@ export default function SingleProject(project: Project) {
     return (
         <div className="flex flex-col items-center rounded-lg p-4 m-4 basis-1/3 bg-white bg-opacity-5">
             <Image
-                className="w-18 h-18 rounded-full object-cover mr-10 mb-5 aspect-square"
+                className="w-18 h-18 object-cover mr-10 mb-5 aspect-square"
                 src={project.imageUrl}
                 alt={project.title}
                 width={200}
@@ -26,7 +26,7 @@ export default function SingleProject(project: Project) {
                         <FaGithub className="text-4xl" />
                     </a>
                 </div>
-                <p className="text-gray-700">{project.description}</p>
+                <p className="text-gray-400">{project.description}</p>
             </div>
         </div>
     );
