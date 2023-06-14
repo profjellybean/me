@@ -36,7 +36,7 @@ export default function Projects() {
             <div className="text-center">
                 <h1 className="text-5xl font-bold text-white mt-20">my work</h1>
             </div>
-            <div className="min-h-[80%] max-w-[80%] ml-auto mr-auto flex justify-center mt-10 mb-10 flex-wrap">
+            <div className="min-h-[80%] max-w-[80%] ml-auto mr-auto flex justify-center items-center mt-10 mb-10 flex-wrap">
                 {myProjects.map((project) => (
                     <SingleProject key={null} title={project.title} description={project.description} link={project.link} imageUrl={project.imageUrl} />
                 ))}
