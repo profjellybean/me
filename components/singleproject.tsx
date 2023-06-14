@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { FaGithub, FaLinkedin, FaChevronDown, FaEnvelope } from 'react-icons/fa';
 
 export interface Project {
     title: string;
@@ -23,9 +22,6 @@ export default function SingleProject(project: Project) {
             <div className='max-w-xl flex flex-wrap gap-2 content-center justify-center'>
                 <div className='mb-1 flex flex-wrap'>
                     <h2 className="text-2xl text-white font-bold basis-1/8">{project.title}</h2>
-
-
-
                 </div>
                 <p className="text-gray-400">{project.description}</p>
             </div>
