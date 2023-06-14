@@ -76,7 +76,8 @@ const skills = [
 ];
 const bio = [
     {
-        description: "I am a 23-year-old software developer based in Vienna. Currently pursuing a master's degree in Software Engineering & Internet Computing at the esteemed Technical University of Vienna, I am constantly expanding my knowledge and honing my skills. I am actively engaged in both academic studies and professional development as a Java developer at the very same university. In addition to my expertise in software development, I am an enthusiastic musician and an avid climber, seeking inspiration from diverse disciplines to fuel my creativity."
+        description: "I am a 23-year-old software developer based in Vienna. Currently pursuing a master's degree in Software Engineering & Internet Computing at the esteemed Technical University of Vienna, I am constantly expanding my knowledge and honing my skills.",
+        description2: "I am actively engaged in both academic studies and professional development as a Java developer at the very same university. In addition to my expertise in software development, I am an enthusiastic musician and an avid climber, seeking inspiration from diverse disciplines to fuel my creativity.",
     }
 ];
 
@@ -87,7 +88,7 @@ export default function CV() {
             <div className="text-center">
                 <h1 className="text-5xl font-bold text-white mt-20">about me</h1>
             </div>
-            <div className="flex gap-10 mt-20 flex-wrap ml-40 mr-20 justify-center items-center">
+            <div className="flex gap-10 mt-20 flex-wrap justify-center items-center">
                 <div className="basis-1/4">
                     <div className="flex justify-center items-center">
                         <Image
@@ -111,13 +112,14 @@ export default function CV() {
                         </a>
                     </div>
                 </div >
-                <div className="flex flex-wrap gap-10 basis-2/3">
+                <div className="flex flex-wrap gap-10 basis-4/5 md:basis-2/3">
                     <div className="basis-full">
                         <h3 className="text-base mb-4 text-ternary-dark dark:text-ternary-light">
-                            {bio[0].description}
+                            {bio[0].description} <br />
+                            {bio[0].description2}
                         </h3>
                     </div>
-                    <div className="basis-1/3">
+                    <div className="md:basis-1/3">
                         <h3 className="font-general-bold text-2xl mb-4 text-ternary-dark dark:text-ternary-light">
                             education
                         </h3>
@@ -129,7 +131,7 @@ export default function CV() {
                             </div>
                         ))}
                     </div>
-                    <div className="basis-1/3">
+                    <div className="md:basis-1/3">
                         <h3 className="font-general-bold text-2xl mb-4 text-ternary-dark dark:text-ternary-light">
                             professional experience
                         </h3>
