@@ -11,7 +11,7 @@ export interface Project {
 
 export default function SingleProject(project: Project) {
     return (
-        <div className="sm:basis-full md:basis-1/3 md:aspect-square min-h-[25%] relative flex flex-col items-center rounded-xl p-4 m-4 bg-white bg-opacity-5 content-center justify-center">
+        <div className="overflow-auto max-w-[33vh] md:aspect-square min-h-[25%] relative flex flex-col items-center rounded-xl p-4 m-4 bg-white bg-opacity-5 content-center justify-center">
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white basis-1/8">
                 <Image
                     className="w-18 h-18 object-cover mb-5 aspect-square opacity-10 hover:opacity-100 transition duration-500 ease-in-out rounded-xl"
