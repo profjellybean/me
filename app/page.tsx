@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin, FaChevronDown, FaEnvelope } from 'react-icons/fa';
-import Projects from '../components/project';
+import { FaGithub, FaLinkedin, FaChevronDown, FaChevronUp, FaEnvelope } from 'react-icons/fa';
+import Project from '../components/project';
 import CV from '@/components/cv';
 import React from 'react';
 
@@ -35,8 +35,30 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="flex-col justify-end items-end mt-10 mr-10 hidden lg:flex md:sticky top-3">
+        <div className="flex justify-center flex-col items-center gap-2">
+          <a href="#home" className="flex items-center text-white hover:text-white flex-col text-2xl font-bold">
+            <FaChevronUp className="mt-2 text-sm" />
+            <span>home</span>
+          </a>
+          <a href="#cv" className="flex items-center text-white hover:text-white flex-col text-2xl font-bold">
+            <span>about me</span>
+            <FaChevronDown className="mt-2 text-sm" />
+          </a>
+        </div>
+      </div>
+      <div className="flex-col justify-end items-end mt-10 mr-10 sm:flex lg:hidden sticky top-3 right-1">
+        <div className="flex justify-center flex-col items-end gap-2">
+          <a href="#home" className="flex items-center text-white hover:text-white flex-col text-2xl font-bold">
+            <FaChevronUp className="mt-2 text-md" />
+          </a>
+          <a href="#cv" className="flex items-center text-white hover:text-white flex-col text-2xl font-bold">
+            <FaChevronDown className="mt-2 text-md" />
+          </a>
+        </div>
+      </div>
       <div className='flex min-h-screen mt-20' id='projects'>
-        <Projects />
+        <Project />
       </div>
       <div className='flex min-h-screen mt-20' id='cv'>
         <CV />

@@ -30,7 +30,7 @@ const myProjects: Project[] = [
 
 
 
-export default function Projects() {
+export default function Project() {
     return (
         <div className="w-full">
             <div className="text-center">

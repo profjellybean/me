@@ -114,7 +114,7 @@ export default function CV() {
                 </div >
                 <div className="flex flex-wrap gap-10 basis-4/5 md:basis-2/3">
                     <div className="basis-full">
-                        <h3 className="text-base mb-4 text-ternary-dark dark:text-ternary-light">
+                        <h3 className="text-base md:mr-40 mb-4 text-ternary-dark dark:text-ternary-light">
                             {bio[0].description} <br />
                             {bio[0].description2}
                         </h3>
