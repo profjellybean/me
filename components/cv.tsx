@@ -116,7 +116,7 @@ export default function CV() {
                     <div className="basis-full">
                         <h3 className="text-base md:mr-40 mb-4 text-ternary-dark dark:text-ternary-light">
                             {bio[0].description} <br />
-                            {bio[0].description2}
+                            <div className="mt-2">{bio[0].description2}</div>
                         </h3>
                     </div>
                     <div className="md:basis-1/3">
