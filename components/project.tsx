@@ -4,8 +4,8 @@ import { Project } from "./singleproject";
 const myProjects: Project[] = [
     {
         title: "Cat-Mouse game",
-        description: "A simple game where the player controls a cat and tries to catch multiple mice. The game is written in Vue.",
-        link: "",
+        description: "A simple game where the player controls a cat and tries to catch multiple mice. The game is written in JavaScript using Vue.",
+        link: "https://github.com/profjellybean/catmouse",
         imageUrl: "/images/catmouse.png"
     },
     {
