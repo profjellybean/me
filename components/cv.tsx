@@ -86,7 +86,7 @@ export default function CV() {
     return (
         <div className="w-full">
             <div className="text-center">
-                <h1 className="text-5xl font-bold text-white mt-20">about me</h1>
+                <h1 className="text-6xl font-bold text-white mt-20">about me</h1>
             </div>
             <div className="flex gap-10 mt-20 flex-wrap justify-center items-center">
                 <div className="basis-1/4">
@@ -94,8 +94,8 @@ export default function CV() {
                         <Image
                             src="/images/pb.jpg"
                             alt="Picture of the author"
-                            width={1000}
-                            height={1000}
+                            width={750}
+                            height={750}
                             className="rounded-full aspect-square justify-center items-center"
                             priority={true}
                         />
@@ -114,7 +114,7 @@ export default function CV() {
                 </div >
                 <div className="flex flex-wrap gap-10 basis-4/5 md:basis-2/3">
                     <div className="basis-full">
-                        <h3 className="text-base md:mr-40 mb-4 text-ternary-dark dark:text-ternary-light">
+                        <h3 className="text-xl md:mr-40 mb-4 text-ternary-dark dark:text-ternary-light">
                             {bio[0].description} <br />
                             <div className="mt-2">{bio[0].description2}</div>
                         </h3>

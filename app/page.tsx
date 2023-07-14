@@ -8,8 +8,8 @@ export default function Home() {
     <div>
       <div className="flex justify-center items-center min-h-screen" id='home'>
         <div className="text-center">
-          <h1 className="text-7xl font-bold text-white">Valentin Schnabl<span className='text-5xl text-gray-400'> B.Sc.</span></h1>
-          <p className="text-2xl text-gray-400 mt-4">full stack software developer</p>
+          <h1 className="text-7xl font-bold text-white">Valentin Schnabl<span className='text-6xl text-gray-400'> B.Sc.</span></h1>
+          <p className="text-3xl text-gray-400 mt-4">full stack software developer</p>
           <div className="mt-2 flex justify-center items-center flex-col">
             <div className="mt-4 flex justify-center items-center space-x-8">
               <a href="https://github.com/profjellybean" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
