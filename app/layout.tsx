@@ -29,6 +29,9 @@ export default function RootLayout({
           gtag('config', 'GA_MEASUREMENT_ID');
         `}
       </Script>
+      <head>
+      <meta property="og:site_name" content="Valentin Schnabl" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
