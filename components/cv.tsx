@@ -76,7 +76,7 @@ const skills = [
 ];
 const bio = [
     {
-        description: "I am a 23-year-old software developer based in Vienna. Currently pursuing a master's degree in Software Engineering & Internet Computing at the esteemed Technical University of Vienna, I am constantly expanding my knowledge and honing my skills.",
+        description: "I am a 24-year-old software developer based in Vienna. Currently pursuing a master's degree in Software Engineering & Internet Computing at the esteemed Technical University of Vienna, I am constantly expanding my knowledge and honing my skills.",
         description2: "I am actively engaged in both academic studies and professional development as a Java developer at the very same university. In addition to my expertise in software development, I am an enthusiastic musician and an avid climber, seeking inspiration from diverse disciplines to fuel my creativity.",
     }
 ];
